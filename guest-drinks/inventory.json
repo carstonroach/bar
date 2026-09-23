@@ -732,6 +732,26 @@
       "available": true,
       "assortment": true,
       "notes": "A rotating selection of domestic and craft beers. Ask your host what’s available today."
+    },
+    {
+      "id": "aperix",
+      "name": "Aperix Aperitivo",
+      "type": "liquor",
+      "class": "Aperitifs & amari",
+      "available": true,
+      "origin": "Italy",
+      "abv": 11,
+      "notes": "Light and bittersweet, with citrus peel, grapefruit and herbal notes. Well suited to a spritz.",
+      "sources": [
+        {
+          "label": "Product reference",
+          "url": "https://www.diffordsguide.com/beer-wine-spirits/7926/aperix-aperitivo"
+        },
+        {
+          "label": "Tasting profile",
+          "url": "https://www.totalwine.com/spirits/amaro-aperitif-vermouth/aperitif/bitter-red/knight-gabriello-aperix-aperitivo/p/171104750"
+        }
+      ]
     }
   ]
 }

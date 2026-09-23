@@ -22,10 +22,10 @@ const all = el => [el, ...el.children.flatMap(all)];
 const clone = () => JSON.parse(JSON.stringify(inventory));
 async function run() {
   await new Promise(resolve => setImmediate(resolve));
-  assert.equal(inventory.drinks.length, 44);
+  assert.equal(inventory.drinks.length, 45);
   assert.equal(inventory.drinks.filter(d => d.type === 'wine').length, 11);
-  assert.equal(inventory.drinks.filter(d => d.type === 'liquor').length, 29);
-  assert.equal(all(elements.menu).filter(el => el.tag === 'h4').length, 44);
+  assert.equal(inventory.drinks.filter(d => d.type === 'liquor').length, 30);
+  assert.equal(all(elements.menu).filter(el => el.tag === 'h4').length, 45);
   assert.equal(all(elements.menu).filter(el => el.tag === 'a').length, 0);
   assert.equal(all(elements.menu).filter(el => el.tag === 'details').length, 0);
   assert.equal(all(elements.menu).filter(el => el.className === 'confirmation').length, 0);
@@ -43,12 +43,12 @@ async function run() {
   assert(elements.status.textContent.includes('may be out of date'));
   fail = false; response = clone(); response.drinks[0].available = false;
   await vm.runInContext('refresh()', context);
-  assert.equal(all(elements.menu).filter(el => el.tag === 'h4').length, 43);
+  assert.equal(all(elements.menu).filter(el => el.tag === 'h4').length, 44);
   assert.equal(elements.status.textContent, '');
   response = clone(); response.drinks[0].name = '<img src=x onerror=alert(1)>';
   await vm.runInContext('refresh()', context);
   assert(all(elements.menu).some(el => el.tag === 'h4' && el.textContent.startsWith('<img')));
   assert(!all(elements.menu).some(el => el.tag === 'img'));
-  console.log('PASS: 44 entries, grouping, provenance, validation, offline preservation, availability and safe text rendering.');
+  console.log('PASS: 45 entries, grouping, provenance, validation, offline preservation, availability and safe text rendering.');
 }
 run().catch(error => { console.error(error); process.exitCode = 1; });
