@@ -4,7 +4,13 @@ A phone-friendly, dependency-free guest menu for GitHub Pages. Beer, wine, liquo
 
 ## Current state
 
-The website is implemented for `carstonroach/bar`. The inventory is intentionally empty because the actual collection has not been provided. Enable GitHub Pages with GitHub Actions as its source, then run the publishing workflow. Verify the public URL before printing a QR code.
+Live at https://carstonroach.github.io/bar/. The inventory contains 39 foreground bottles identified from four owner-provided photos on September 23, 2026: 29 spirits/liqueurs and 10 wine-based drinks (including vermouth). No beer or non-alcoholic drinks were shown. Photos and background objects are not published.
+
+Product descriptions and paraphrased tasting profiles link to producer, importer, retailer, or reviewer references. They are not tasting assessments of these particular opened bottles. ABVs are taken from readable labels or published product specifications; unresolved bottle-specific details are visibly flagged. Missing ABVs are deliberately omitted rather than guessed. Vintages are included only when readable.
+
+Pending label checks: Vincenzi white chocolate expression/ABV; J. L. Quinson 2023 ABV; Thousand Lives 2022 ABV; Maria Jola ABV; Ercole vintage/ABV; Campari and Hendrick’s market-specific ABV; Midori production country. Kirkland Prosecco Rosé vintage and High West release year are not transcribed because they are not sufficiently legible. Partially hidden background bottles are excluded.
+
+Optional fields: `description` for production/serving details, `confirmation` for an unresolved label question, `abvUnconfirmed: true` for a provisional published strength, and `sources` as an array of `{ "label": "Product reference", "url": "https://..." }`. Only HTTPS reference links are accepted. `catalogNote` provides the top-level provenance statement.
 
 ## Update the collection
 

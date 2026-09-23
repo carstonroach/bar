@@ -10,18 +10,27 @@ function node(tag, text, className) {
 }
 function validate(data) {
   if (!data || !Array.isArray(data.drinks)) throw new Error('Invalid inventory');
+  if (data.catalogNote !== undefined && typeof data.catalogNote !== 'string') throw new Error('Invalid catalog note');
   if (data.updatedAt !== null && (typeof data.updatedAt !== 'string' || Number.isNaN(Date.parse(data.updatedAt)))) throw new Error('Invalid date');
   const ids = new Set();
   for (const drink of data.drinks) {
     if (!drink || typeof drink.id !== 'string' || !drink.id.trim() || ids.has(drink.id) || typeof drink.name !== 'string' || !drink.name.trim() || !categories.some(([id]) => id === drink.type) || typeof drink.class !== 'string' || !drink.class.trim() || typeof drink.available !== 'boolean') throw new Error('Invalid drink');
     ids.add(drink.id);
-    for (const key of ['producer', 'origin', 'notes']) if (drink[key] !== undefined && typeof drink[key] !== 'string') throw new Error('Invalid text');
+    for (const key of ['producer', 'origin', 'notes', 'description', 'confirmation']) if (drink[key] !== undefined && typeof drink[key] !== 'string') throw new Error('Invalid text');
     if (drink.abv !== undefined && (typeof drink.abv !== 'number' || !Number.isFinite(drink.abv) || drink.abv < 0 || drink.abv > 100)) throw new Error('Invalid ABV');
+    if (drink.abvUnconfirmed !== undefined && typeof drink.abvUnconfirmed !== 'boolean') throw new Error('Invalid ABV status');
+    if (drink.sources !== undefined) {
+      if (!Array.isArray(drink.sources)) throw new Error('Invalid sources');
+      for (const source of drink.sources) {
+        if (!source || typeof source.label !== 'string' || !source.label.trim() || typeof source.url !== 'string' || new URL(source.url).protocol !== 'https:') throw new Error('Invalid source');
+      }
+    }
   }
   return data;
 }
 function render(data) {
   const menu = document.createDocumentFragment();
+  if (data.catalogNote) menu.append(node('p', data.catalogNote, 'catalog-note'));
   for (const [id, title] of categories) {
     const section = node('section'); section.id = id;
     const drinks = data.drinks.filter(d => d.type === id && d.available);
@@ -33,9 +42,22 @@ function render(data) {
       const list = node('ul');
       for (const d of drinks.filter(d => d.class === spiritClass).sort((a, b) => a.name.localeCompare(b.name))) {
         const item = node('li'); item.append(node('h4', d.name));
-        const details = [d.producer, d.origin, d.abv !== undefined ? `${d.abv}% ABV` : ''].filter(Boolean).join(' · ');
+        const strength = d.abv !== undefined ? `${d.abv}% ABV${d.abvUnconfirmed ? ' (label check pending)' : ''}` : 'ABV awaiting label confirmation';
+        const details = [d.producer, d.origin, strength].filter(Boolean).join(' · ');
         if (details) item.append(node('p', details, 'details'));
         if (d.notes) item.append(node('p', d.notes, 'notes'));
+        if (d.confirmation) item.append(node('p', d.confirmation, 'confirmation'));
+        if (d.description || d.sources?.length) {
+          const more = node('details', undefined, 'bottle-info');
+          more.append(node('summary', 'Bottle details & sources'));
+          if (d.description) more.append(node('p', d.description));
+          for (const source of d.sources || []) {
+            const link = node('a', `${source.label} (${new URL(source.url).hostname.replace(/^www\./, '')})`);
+            link.href = source.url; link.target = '_blank'; link.rel = 'noopener noreferrer';
+            more.append(link);
+          }
+          item.append(more);
+        }
         list.append(item);
       }
       section.append(list);

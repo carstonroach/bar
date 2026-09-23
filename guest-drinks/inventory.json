@@ -1,4 +1,676 @@
 {
-  "updatedAt": null,
-  "drinks": []
+  "updatedAt": "2026-09-23",
+  "catalogNote": "Identified from four collection photos. ABVs use readable labels or published product specifications. Marked details need a bottle-label check. Tasting notes describe the product or stated style, not a tasting of these opened bottles.",
+  "drinks": [
+    {
+      "id": "marie-duffau-napoleon",
+      "name": "Marie Duffau Napoléon",
+      "type": "liquor",
+      "class": "Brandy",
+      "available": true,
+      "origin": "Bas-Armagnac, Gascony, France",
+      "abv": 40,
+      "description": "Oak-aged grape brandy; Napoléon designation.",
+      "notes": "Baked apple, vanilla, dried fruit and warming oak spice.",
+      "sources": [
+        {
+          "label": "Product reference",
+          "url": "https://www.armagnacmarieduffau.com/en/our-armagnacs"
+        }
+      ]
+    },
+    {
+      "id": "vincenzi-white-chocolate",
+      "name": "Vincenzi White Chocolate Liqueur",
+      "type": "liquor",
+      "class": "Liqueurs",
+      "available": true,
+      "origin": "Turin, Piedmont, Italy",
+      "abv": 15,
+      "description": "White chocolate liqueur. Serve chilled or over ice.",
+      "notes": "Sweet white chocolate with a creamy texture.",
+      "sources": [
+        {
+          "label": "Product reference",
+          "url": "https://www.distillerievincenzi.com/bicerin/"
+        }
+      ],
+      "confirmation": "White chocolate is visible on the label. Confirm the exact expression and ABV; 15% is the producer’s Bicerin White specification.",
+      "abvUnconfirmed": true
+    },
+    {
+      "id": "four-roses-obsk",
+      "name": "Four Roses Single Barrel OBSK",
+      "type": "liquor",
+      "class": "Whiskey",
+      "available": true,
+      "origin": "Kentucky, USA",
+      "abv": 50,
+      "description": "Kentucky straight bourbon; OBSK recipe, 100 proof. Producer describes 7–9 years of aging.",
+      "notes": "Rye spice, cocoa, cinnamon, caramel and bright oak.",
+      "sources": [
+        {
+          "label": "Product reference",
+          "url": "https://www.fourrosesbourbon.com/bourbon/single-barrel-obsk"
+        }
+      ]
+    },
+    {
+      "id": "velvet-falernum",
+      "name": "John D. Taylor’s Velvet Falernum",
+      "type": "liquor",
+      "class": "Liqueurs",
+      "available": true,
+      "origin": "Barbados",
+      "abv": 11,
+      "description": "Alcoholic falernum, not alcohol-free syrup; a classic tropical-cocktail ingredient.",
+      "notes": "Sweet lime and warming spice, with clove and almond-like notes.",
+      "sources": [
+        {
+          "label": "Product reference",
+          "url": "https://alpenz.com/product-falernum.html"
+        }
+      ]
+    },
+    {
+      "id": "coppercraft-blend",
+      "name": "Coppercraft Blend of Straight Bourbon Whiskies",
+      "type": "liquor",
+      "class": "Whiskey",
+      "available": true,
+      "origin": "Michigan and Indiana, USA",
+      "abv": 50,
+      "description": "Blended in Holland, Michigan. Producer describes Michigan bourbon aged 4+ years and Indiana bourbon aged 9+ years; 100 proof.",
+      "notes": "Oak, caramel and assertive spice.",
+      "sources": [
+        {
+          "label": "Product reference",
+          "url": "https://barcart.coppercraftdistillery.com/products/coppercraft-blend-of-straight-bourbon-whiskies"
+        }
+      ]
+    },
+    {
+      "id": "four-roses-small-batch",
+      "name": "Four Roses Small Batch",
+      "type": "liquor",
+      "class": "Whiskey",
+      "available": true,
+      "origin": "Kentucky, USA",
+      "abv": 45,
+      "description": "Kentucky straight bourbon; a blend of four bourbon recipes, 90 proof.",
+      "notes": "Ripe fruit, caramel, oak and gentle baking spice.",
+      "sources": [
+        {
+          "label": "Product reference",
+          "url": "https://www.fourrosesbourbon.com/bourbon/small-batch"
+        }
+      ]
+    },
+    {
+      "id": "basil-hayden",
+      "name": "Basil Hayden Kentucky Straight Bourbon",
+      "type": "liquor",
+      "class": "Whiskey",
+      "available": true,
+      "origin": "Kentucky, USA",
+      "abv": 40,
+      "description": "Original Kentucky straight bourbon; 80 proof.",
+      "notes": "Light-bodied, with pepper, vanilla, honey and oak.",
+      "sources": [
+        {
+          "label": "Product reference",
+          "url": "https://www.basilhaydenbourbon.com/whiskies/basil-hayden-kentucky-straight-bourbon"
+        }
+      ]
+    },
+    {
+      "id": "chambord",
+      "name": "Chambord",
+      "type": "liquor",
+      "class": "Liqueurs",
+      "available": true,
+      "origin": "Loire Valley, France",
+      "abv": 16.5,
+      "description": "Black raspberry liqueur with cognac, vanilla and citrus; suitable for a French Martini.",
+      "notes": "Rich berry sweetness with vanilla, citrus and honey.",
+      "sources": [
+        {
+          "label": "Product reference",
+          "url": "https://www.chambordliqueur.com/our-ingredients/"
+        }
+      ]
+    },
+    {
+      "id": "nonino",
+      "name": "Amaro Nonino Quintessentia",
+      "type": "liquor",
+      "class": "Aperitifs & amari",
+      "available": true,
+      "origin": "Friuli, Italy",
+      "abv": 35,
+      "description": "Herbal bittersweet liqueur made with aged grape distillate. Serve as a digestif or in a Paper Plane.",
+      "notes": "Bittersweet herbs, orange and warming spice.",
+      "sources": [
+        {
+          "label": "Product reference",
+          "url": "https://www.grappanonino.it/en/amaro-and-liqueurs/amaro-nonino-quintessentia/"
+        }
+      ]
+    },
+    {
+      "id": "kirkland-champagne",
+      "name": "Kirkland Signature Champagne Brut",
+      "type": "wine",
+      "class": "Sparkling wine",
+      "available": true,
+      "origin": "Champagne, France",
+      "abv": 12,
+      "description": "Non-vintage brut Champagne; Chardonnay, Pinot Noir and Pinot Meunier. Serve chilled.",
+      "notes": "Citrus and peach with a toasty, gingerbread-like richness.",
+      "sources": [
+        {
+          "label": "Product reference",
+          "url": "https://www.costco.co.uk/Wines-Spirits-Beer/Wines/Mix-Match-Wine/Kirkland-Signature-NV-Brut-Champagne-75cl/p/942108"
+        }
+      ]
+    },
+    {
+      "id": "josh-prosecco-rose",
+      "name": "Josh Prosecco Rosé DOC",
+      "type": "wine",
+      "class": "Sparkling wine",
+      "available": true,
+      "origin": "Italy",
+      "abv": 11.5,
+      "description": "Italian sparkling rosé, not California still rosé. Serve chilled.",
+      "notes": "Red berries, citrus and refreshing bubbles.",
+      "sources": [
+        {
+          "label": "Product reference",
+          "url": "https://www.joshcellars.com/products/josh-cellars-prosecco-rose"
+        }
+      ]
+    },
+    {
+      "id": "kirkland-valdobbiadene",
+      "name": "Kirkland Signature Valdobbiadene Prosecco Superiore DOCG",
+      "type": "wine",
+      "class": "Sparkling wine",
+      "available": true,
+      "origin": "Valdobbiadene, Veneto, Italy",
+      "abv": 11,
+      "description": "Glera-based Italian sparkling wine; extra dry style. Serve chilled.",
+      "notes": "Fresh orchard fruit, light floral notes and a touch of sweetness.",
+      "sources": [
+        {
+          "label": "Product reference",
+          "url": "https://sameday.costco.com/store/costco/products/19230777-kirkland-signature-prosecco-docg-italy-750ml-750-ml"
+        }
+      ]
+    },
+    {
+      "id": "quinson-rose",
+      "name": "J. L. Quinson Côtes de Provence Rosé 2023",
+      "type": "wine",
+      "class": "Rosé wine",
+      "available": true,
+      "origin": "Provence, France",
+      "description": "2023 vintage visible on the front label. Still rosé; serve chilled.",
+      "notes": "General product profile: delicate peach, melon and floral notes.",
+      "sources": [
+        {
+          "label": "Product reference",
+          "url": "https://www.thekitchn.com/trader-joes-j-l-quinson-cotes-de-provence-rose-review-23548366"
+        }
+      ],
+      "confirmation": "Please confirm the ABV on the 2023 bottle’s back label."
+    },
+    {
+      "id": "kirkland-prosecco-rose",
+      "name": "Kirkland Signature Prosecco Rosé DOC",
+      "type": "wine",
+      "class": "Sparkling wine",
+      "available": true,
+      "origin": "Italy",
+      "abv": 11,
+      "description": "Sparkling rosé made from Glera and Pinot Noir. Vintage not legible in the photo. Serve chilled.",
+      "notes": "Light red-fruit and citrus notes with a fresh, bubbly finish.",
+      "sources": [
+        {
+          "label": "Product reference",
+          "url": "https://www.costco.com.au/KIRKLAND-SIGNATURE/Kirkland-Signature-Prosecco-Rose-DOC-750ml/p/1521870_BD"
+        }
+      ]
+    },
+    {
+      "id": "jayson-chardonnay",
+      "name": "Jayson by Pahlmeyer Chardonnay 2023",
+      "type": "wine",
+      "class": "White wine",
+      "available": true,
+      "origin": "Napa Valley, California, USA",
+      "abv": 14.3,
+      "description": "100% Chardonnay. The producer’s 2023 specification gives 14.3% ABV; matured primarily in previously used oak.",
+      "notes": "Lemon, peach and almond with a rounded texture and subtle sweet oak.",
+      "sources": [
+        {
+          "label": "Product reference",
+          "url": "https://www.pahlmeyer.com/vintage/2023-jayson-chardonnay/"
+        }
+      ]
+    },
+    {
+      "id": "thousand-lives-pinot",
+      "name": "Thousand Lives Pinot Noir 2022",
+      "type": "wine",
+      "class": "Red wine",
+      "available": true,
+      "origin": "Mendoza, Argentina",
+      "description": "2022 vintage visible on the front label. Serve slightly cool.",
+      "notes": "General product profile: raspberry, strawberry and rose, with a soft texture.",
+      "sources": [
+        {
+          "label": "Product reference",
+          "url": "https://www.totalwine.com/wine/red-wine/pinot-noir/thousand-lives-pinot-noir/p/213637750"
+        }
+      ],
+      "confirmation": "Please confirm the ABV on the 2022 bottle’s back label."
+    },
+    {
+      "id": "maria-jola-sangria",
+      "name": "Maria Jola Red Sangria",
+      "type": "wine",
+      "class": "Sangria",
+      "available": true,
+      "origin": "France",
+      "description": "Red wine-based sangria. Front label explicitly says produced in France. Serve chilled.",
+      "notes": "Sweet fruit with citrus and warm spice.",
+      "sources": [
+        {
+          "label": "Product reference",
+          "url": "https://www.bottlesandcases.com/wines/Maria-Jola-Sangria-15-w1662364ds"
+        }
+      ],
+      "confirmation": "Please confirm the ABV on the back label; older listings may not match this bottle."
+    },
+    {
+      "id": "ercole-barbera",
+      "name": "Ercole Barbera del Monferrato DOC",
+      "type": "wine",
+      "class": "Red wine",
+      "available": true,
+      "origin": "Piedmont, Italy",
+      "description": "100% Barbera; 1-liter bottle. Importer describes concrete fermentation. Vintage is not visible.",
+      "notes": "Bright acidity and a lively, fruit-forward character.",
+      "sources": [
+        {
+          "label": "Product reference",
+          "url": "https://thepiedmontguy.squarespace.com/s/Ercole-Barbera-Tech-Sheet.pdf"
+        }
+      ],
+      "confirmation": "Please confirm vintage and ABV. The importer’s undated sheet lists 12.5%, which may not match this bottle."
+    },
+    {
+      "id": "kirkland-anejo",
+      "name": "Kirkland Signature Tequila Añejo",
+      "type": "liquor",
+      "class": "Tequila",
+      "available": true,
+      "origin": "Mexico",
+      "abv": 40,
+      "description": "100% agave añejo tequila; 1-liter bottle, 80 proof. The neck’s 94 is a rating, not the alcohol proof.",
+      "notes": "Style profile: cooked agave with oak, vanilla and caramel from barrel aging.",
+      "sources": [
+        {
+          "label": "Product reference",
+          "url": "https://sameday.costco.com/store/costco-spirits/products/20720515-kirkland-signature-anejo-mexico-tequila-1-l"
+        }
+      ]
+    },
+    {
+      "id": "lagavulin-16",
+      "name": "Lagavulin 16 Year Old",
+      "type": "liquor",
+      "class": "Whiskey",
+      "available": true,
+      "origin": "Islay, Scotland",
+      "abv": 43,
+      "description": "Single malt Scotch whisky aged 16 years.",
+      "notes": "Powerful peat smoke, maritime notes, dried fruit and oak.",
+      "sources": [
+        {
+          "label": "Product reference",
+          "url": "https://www.malts.com/en-us/products/lagavulin-16-year-old-single-malt-scotch-whisky-750ml"
+        }
+      ]
+    },
+    {
+      "id": "high-west-rendezvous",
+      "name": "High West Rendezvous Rye",
+      "type": "liquor",
+      "class": "Whiskey",
+      "available": true,
+      "origin": "Utah, USA (blended and bottled)",
+      "abv": 46,
+      "description": "Blend of straight rye whiskeys; 92 proof. Release year and component ages are not confirmed for this bottle.",
+      "notes": "Rye spice, dried fruit and sweet herbal notes.",
+      "sources": [
+        {
+          "label": "Product reference",
+          "url": "https://highwest.com/products/rendezvous-rye"
+        }
+      ]
+    },
+    {
+      "id": "st-george-pear",
+      "name": "St. George Spiced Pear Liqueur",
+      "type": "liquor",
+      "class": "Liqueurs",
+      "available": true,
+      "origin": "Alameda, California, USA",
+      "abv": 20,
+      "description": "Bartlett pear liqueur seasoned with cinnamon and clove.",
+      "notes": "Ripe pear, baking spice and rich fruit sweetness.",
+      "sources": [
+        {
+          "label": "Product reference",
+          "url": "https://stgeorgespirits.com/spirits/spiced-pear-liqueur"
+        }
+      ]
+    },
+    {
+      "id": "leblon",
+      "name": "Leblon Cachaça",
+      "type": "liquor",
+      "class": "Cachaça",
+      "available": true,
+      "origin": "Patos de Minas, Minas Gerais, Brazil",
+      "abv": 40,
+      "description": "Distilled from fresh sugarcane juice; 80 proof. A classic base for a Caipirinha.",
+      "notes": "Fresh sugarcane, grassy and fruity notes.",
+      "sources": [
+        {
+          "label": "Product reference",
+          "url": "https://www.leblon.com/"
+        }
+      ]
+    },
+    {
+      "id": "ketel-one",
+      "name": "Ketel One Vodka",
+      "type": "liquor",
+      "class": "Vodka",
+      "available": true,
+      "origin": "Schiedam, Netherlands",
+      "abv": 40,
+      "description": "Wheat-based vodka from the Nolet distillery; 80 proof.",
+      "notes": "Clean and soft, with subtle citrus and a crisp finish.",
+      "sources": [
+        {
+          "label": "Product reference",
+          "url": "https://noletdistillery.com/en/product/ketel-one-vodka/"
+        }
+      ]
+    },
+    {
+      "id": "campari",
+      "name": "Campari",
+      "type": "liquor",
+      "class": "Aperitifs & amari",
+      "available": true,
+      "origin": "Italy",
+      "abv": 24,
+      "description": "Bitter red aperitif; a classic Negroni or Americano ingredient.",
+      "notes": "Bitter orange, herbs and balancing sweetness.",
+      "sources": [
+        {
+          "label": "Product reference",
+          "url": "https://www.campari.com/en-us/"
+        }
+      ],
+      "confirmation": "24% is the US product specification; confirm the bottle label because Campari strengths vary by market.",
+      "abvUnconfirmed": true
+    },
+    {
+      "id": "siesta-key-coconut",
+      "name": "Siesta Key Toasted Coconut Rum",
+      "type": "liquor",
+      "class": "Rum",
+      "available": true,
+      "origin": "Sarasota, Florida, USA",
+      "abv": 35,
+      "description": "Rum flavored with real toasted coconut; this is the standard Toasted Coconut bottling.",
+      "notes": "Toasted coconut, vanilla and a sweet, rounded finish.",
+      "sources": [
+        {
+          "label": "Product reference",
+          "url": "https://www.siestakeyrum.com/rums"
+        }
+      ]
+    },
+    {
+      "id": "sovereign-gin",
+      "name": "Long Road Sovereign Gin",
+      "type": "liquor",
+      "class": "Gin",
+      "available": true,
+      "origin": "Grand Rapids, Michigan, USA",
+      "abv": 41,
+      "description": "Wheat-based gin colored with butterfly pea flower; 82 proof. Its color changes with acidity.",
+      "notes": "Juniper and citrus peel with bay leaf and Thai basil.",
+      "sources": [
+        {
+          "label": "Product reference",
+          "url": "https://longroaddistillers.com/wp-content/uploads/2022/11/Long-Road-Distillers_Sell-Sheet_Sovereign-Gin.pdf"
+        }
+      ]
+    },
+    {
+      "id": "hendricks",
+      "name": "Hendrick’s Gin",
+      "type": "liquor",
+      "class": "Gin",
+      "available": true,
+      "origin": "Scotland",
+      "abv": 44,
+      "description": "Original cucumber-and-rose gin, not a special edition.",
+      "notes": "Juniper, cucumber and floral rose notes.",
+      "sources": [
+        {
+          "label": "Product reference",
+          "url": "https://us.hendricksgin.com/faqs/"
+        }
+      ],
+      "confirmation": "44% is the US specification; confirm the bottle label because other markets use 41.4%.",
+      "abvUnconfirmed": true
+    },
+    {
+      "id": "sailor-jerry",
+      "name": "Sailor Jerry Spiced Rum",
+      "type": "liquor",
+      "class": "Rum",
+      "available": true,
+      "origin": "Caribbean rum blend",
+      "abv": 46,
+      "description": "92 proof is visible on this bottle; different markets may sell a different strength.",
+      "notes": "Vanilla, warm baking spices and a rounded sweetness.",
+      "sources": [
+        {
+          "label": "Product reference",
+          "url": "https://www.sailorjerry.com/en-gb/rum-cocktail-recipes/our-story"
+        }
+      ]
+    },
+    {
+      "id": "midori",
+      "name": "Midori Melon Liqueur",
+      "type": "liquor",
+      "class": "Liqueurs",
+      "available": true,
+      "origin": "Japanese brand; bottling country unconfirmed",
+      "abv": 20,
+      "description": "Made with Japanese melon ingredients. The brand’s Japanese origin does not establish where this particular bottle was produced.",
+      "notes": "Sweet, vivid melon flavor.",
+      "sources": [
+        {
+          "label": "Product reference",
+          "url": "https://www.midori-world.com/product"
+        }
+      ],
+      "confirmation": "Please confirm the country of production on the back label."
+    },
+    {
+      "id": "old-forester-1910",
+      "name": "Old Forester 1910 Old Fine Whisky",
+      "type": "liquor",
+      "class": "Whiskey",
+      "available": true,
+      "origin": "Kentucky, USA",
+      "abv": 46.5,
+      "description": "Kentucky straight bourbon finished in a second, heavily charred barrel; 93 proof.",
+      "notes": "Caramel, vanilla, toasted oak and baking spice.",
+      "sources": [
+        {
+          "label": "Product reference",
+          "url": "https://www.oldforester.com/products/old-forester-1910-old-fine-whisky/"
+        }
+      ]
+    },
+    {
+      "id": "mephisto",
+      "name": "Mephisto Absinthe Classique",
+      "type": "liquor",
+      "class": "Absinthe",
+      "available": true,
+      "origin": "Vienna, Austria",
+      "abv": 65,
+      "description": "Wormwood-based absinthe; 130 proof. Traditionally diluted slowly with cold water.",
+      "notes": "Anise-led, with fennel-like sweetness and bitter herbal notes.",
+      "sources": [
+        {
+          "label": "Product reference",
+          "url": "https://www.diffordsguide.com/beer-wine-spirits/7254/mephisto-absinthe"
+        }
+      ]
+    },
+    {
+      "id": "pimms",
+      "name": "Pimm’s No. 1 Cup",
+      "type": "liquor",
+      "class": "Liqueurs",
+      "available": true,
+      "origin": "United Kingdom",
+      "abv": 25,
+      "description": "Gin-based fruit cup. Serve long with lemonade or ginger ale and fruit.",
+      "notes": "Bittersweet citrus, herbs and warm spice.",
+      "sources": [
+        {
+          "label": "Product reference",
+          "url": "https://www.thebar.com/en/products/pimms-no1-cup-1l"
+        }
+      ]
+    },
+    {
+      "id": "espolon-blanco",
+      "name": "Espolòn Tequila Blanco",
+      "type": "liquor",
+      "class": "Tequila",
+      "available": true,
+      "origin": "Los Altos, Jalisco, Mexico",
+      "abv": 40,
+      "description": "Unaged tequila made from 100% blue Weber agave; 80 proof.",
+      "notes": "Fresh agave, citrus and a peppery finish.",
+      "sources": [
+        {
+          "label": "Product reference",
+          "url": "https://www.espolontequila.com/en-us/our-tequilas/tequila-blanco/"
+        }
+      ]
+    },
+    {
+      "id": "fussigny-orange",
+      "name": "A. de Fussigny Orange Cognac Liqueur",
+      "type": "liquor",
+      "class": "Liqueurs",
+      "available": true,
+      "origin": "France",
+      "abv": 40,
+      "description": "Cognac-based orange liqueur; 80 proof. Not plain Cognac.",
+      "notes": "Orange peel and sweet citrus with rounded brandy notes.",
+      "sources": [
+        {
+          "label": "Product reference",
+          "url": "https://www.marketplace.businessfrance.fr/a-de-fussigny-orange.html"
+        }
+      ]
+    },
+    {
+      "id": "black-star-apple",
+      "name": "Black Star Farms Spirit of Apple",
+      "type": "liquor",
+      "class": "Brandy",
+      "available": true,
+      "origin": "Michigan, USA",
+      "abv": 40,
+      "description": "Oak-aged apple brandy; 80 proof. No bottle-specific age statement confirmed.",
+      "notes": "Apple fruit with oak-aged warmth.",
+      "sources": [
+        {
+          "label": "Product reference",
+          "url": "https://blackstarfarms.com/wp-content/uploads/2024/10/SPIRIT-of-APPLE-1.pdf"
+        }
+      ]
+    },
+    {
+      "id": "black-star-cherry",
+      "name": "Black Star Farms Spirit of Cherry",
+      "type": "liquor",
+      "class": "Brandy",
+      "available": true,
+      "origin": "Michigan, USA",
+      "abv": 40,
+      "description": "Clear cherry eau-de-vie; 80 proof. A dry distilled fruit brandy, not a sweet cherry liqueur.",
+      "notes": "Concentrated cherry aroma with a dry finish.",
+      "sources": [
+        {
+          "label": "Product reference",
+          "url": "https://www.spirithub.com/products/black-star-farms-spirit-of-cherry-brandy"
+        }
+      ]
+    },
+    {
+      "id": "appleton-signature",
+      "name": "Appleton Estate Signature Blend",
+      "type": "liquor",
+      "class": "Rum",
+      "available": true,
+      "origin": "Jamaica",
+      "abv": 40,
+      "description": "Blend of pot- and column-still rums; 80 proof. No age statement on this expression.",
+      "notes": "Fruit-forward, with citrus, dried apricot and molasses.",
+      "sources": [
+        {
+          "label": "Product reference",
+          "url": "https://www.appletonestate.com/en-us/rums/signature/"
+        }
+      ]
+    },
+    {
+      "id": "martini-extra-dry",
+      "name": "Martini & Rossi Extra Dry",
+      "type": "wine",
+      "class": "Vermouth",
+      "available": true,
+      "origin": "Piedmont, Italy",
+      "abv": 18,
+      "description": "Dry aromatized fortified wine, not distilled liquor. Refrigerate after opening.",
+      "notes": "Herbal and floral, with raspberry, lemon and woody notes.",
+      "sources": [
+        {
+          "label": "Product reference",
+          "url": "https://www.martini.com/products/martini-extra-dry/"
+        }
+      ]
+    }
+  ]
 }
