@@ -26,8 +26,8 @@ async function run() {
   assert.equal(inventory.drinks.filter(d => d.type === 'wine').length, 11);
   assert.equal(inventory.drinks.filter(d => d.type === 'liquor').length, 29);
   assert.equal(all(elements.menu).filter(el => el.tag === 'h4').length, 44);
-  assert.equal(all(elements.menu).filter(el => el.tag === 'a').length, 39);
-  assert.equal(all(elements.menu).filter(el => el.tag === 'details').length, 39);
+  assert.equal(all(elements.menu).filter(el => el.tag === 'a').length, 0);
+  assert.equal(all(elements.menu).filter(el => el.tag === 'details').length, 0);
   assert.equal(all(elements.menu).filter(el => el.className === 'confirmation').length, 0);
   assert(all(elements.menu).some(el => el.textContent === 'Thousand Lives Pinot Noir 2022'));
   assert(!all(elements.menu).some(el => el.textContent.includes('ABV awaiting label confirmation')));

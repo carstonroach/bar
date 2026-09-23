@@ -1,6 +1,5 @@
 {
   "updatedAt": "2026-09-23",
-  "catalogNote": "Bottle details are based on collection photos, owner confirmations and published product specifications. Tasting notes describe the product or stated style. Beer and assorted drink flavors rotate; ask your host for current options.",
   "drinks": [
     {
       "id": "marie-duffau-napoleon",
@@ -672,7 +671,14 @@
       "class": "Sparkling water",
       "available": true,
       "assortment": true,
-      "notes": "Sparkling mineral water."
+      "notes": "Sparkling mineral water.",
+      "origin": "San Pellegrino Terme, Italy",
+      "sources": [
+        {
+          "label": "Brand origin",
+          "url": "https://www.sanpellegrino.com/s.pellegrino-water/origins"
+        }
+      ]
     },
     {
       "id": "la-croix",
@@ -681,7 +687,14 @@
       "class": "Sparkling water",
       "available": true,
       "assortment": true,
-      "notes": "Various flavors. Ask your host for today’s selection."
+      "notes": "Various flavors. Ask your host for today’s selection.",
+      "origin": "La Crosse, WI",
+      "sources": [
+        {
+          "label": "Brand origin",
+          "url": "https://en.wikipedia.org/wiki/La_Croix_Sparkling_Water"
+        }
+      ]
     },
     {
       "id": "high-noon",
@@ -699,7 +712,14 @@
       "class": "Sodas & mixers",
       "available": true,
       "assortment": true,
-      "notes": "Various flavors. Enjoy on their own or as a mixer."
+      "notes": "Various flavors. Enjoy on their own or as a mixer.",
+      "origin": "London, England",
+      "sources": [
+        {
+          "label": "Brand origin",
+          "url": "https://fever-tree.com/index.php/en-us/our-story"
+        }
+      ]
     },
     {
       "id": "rotating-beers",

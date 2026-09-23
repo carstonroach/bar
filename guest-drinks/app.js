@@ -31,7 +31,6 @@ function validate(data) {
 }
 function render(data) {
   const menu = document.createDocumentFragment();
-  if (data.catalogNote) menu.append(node('p', data.catalogNote, 'catalog-note'));
   for (const [id, title] of categories) {
     const section = node('section'); section.id = id;
     const drinks = data.drinks.filter(d => d.type === id && d.available);
@@ -43,22 +42,11 @@ function render(data) {
       const list = node('ul');
       for (const d of drinks.filter(d => d.class === spiritClass).sort((a, b) => a.name.localeCompare(b.name))) {
         const item = node('li'); item.append(node('h4', d.name));
-        const strength = d.abv !== undefined ? `${d.abv}% ABV${d.abvUnconfirmed ? ' (label check pending)' : ''}` : d.type === 'non-alcoholic' ? 'Non-alcoholic' : d.assortment ? 'ABV varies by selection' : 'ABV awaiting label confirmation';
+        const strength = d.abv !== undefined ? `${d.abv}% ABV${d.abvUnconfirmed ? ' (label check pending)' : ''}` : d.type === 'non-alcoholic' ? '' : d.assortment ? 'ABV varies by selection' : 'ABV awaiting label confirmation';
         const details = [d.producer, d.origin, strength].filter(Boolean).join(' · ');
         if (details) item.append(node('p', details, 'details'));
         if (d.notes) item.append(node('p', d.notes, 'notes'));
         if (d.confirmation) item.append(node('p', d.confirmation, 'confirmation'));
-        if (d.description || d.sources?.length) {
-          const more = node('details', undefined, 'bottle-info');
-          more.append(node('summary', 'Bottle details & sources'));
-          if (d.description) more.append(node('p', d.description));
-          for (const source of d.sources || []) {
-            const link = node('a', `${source.label} (${new URL(source.url).hostname.replace(/^www\./, '')})`);
-            link.href = source.url; link.target = '_blank'; link.rel = 'noopener noreferrer';
-            more.append(link);
-          }
-          item.append(more);
-        }
         list.append(item);
       }
       section.append(list);
@@ -67,7 +55,7 @@ function render(data) {
     menu.append(section);
   }
   document.getElementById('menu').replaceChildren(menu);
-  document.getElementById('updated').textContent = data.updatedAt ? `Collection updated ${new Intl.DateTimeFormat('en', {dateStyle:'medium', timeZone:'UTC'}).format(new Date(data.updatedAt))}` : 'Collection coming soon';
+  document.getElementById('updated').textContent = data.updatedAt ? `updated ${new Intl.DateTimeFormat('en', {dateStyle:'medium', timeZone:'UTC'}).format(new Date(data.updatedAt))}` : 'Collection coming soon';
 }
 async function refresh() {
   if (loading) return;

@@ -1,4 +1,4 @@
-# The drinks collection
+# now serving
 
 A phone-friendly, dependency-free guest menu for GitHub Pages. Beer, wine, liquor, and non-alcoholic drinks are grouped by class. No accounts or visitor tracking.
 
@@ -6,11 +6,11 @@ A phone-friendly, dependency-free guest menu for GitHub Pages. Beer, wine, liquo
 
 Live at https://carstonroach.github.io/bar/. The inventory contains 39 foreground bottles identified from four owner-provided photos on September 23, 2026: 28 spirits/liqueurs and 11 wine-based drinks (including vermouth). The menu also includes San Pellegrino, assorted La Croix, High Noon and Fever Tree sodas, plus a rotating domestic/craft beer selection, as confirmed by the owner. These five entries represent drink selections rather than individual bottles. Photos and background objects are not published.
 
-Product descriptions and paraphrased tasting profiles link to producer, importer, retailer, or reviewer references. They are not tasting assessments of these particular opened bottles. ABVs are taken from readable labels, owner confirmations or published product specifications; unresolved bottle-specific details are visibly flagged. Missing ABVs are deliberately omitted rather than guessed. Vintages are included when readable or confirmed by the owner.
+The inventory retains producer, importer, retailer, or reviewer references for maintenance; the guest menu displays names, origins, ABVs and tasting profiles without expandable details or source links. They are not tasting assessments of these particular opened bottles. ABVs are taken from readable labels, owner confirmations or published product specifications; unresolved bottle-specific details are visibly flagged. Missing ABVs are deliberately omitted rather than guessed. Vintages are included when readable or confirmed by the owner.
 
 All eight requested label checks were resolved by owner confirmation and close-up photos on September 23, 2026. Vincenzi was corrected to Vermouth di Torino Bianco (17% ABV) and moved to Wine > Vermouth. Ercole is the 2024 vintage. Kirkland Prosecco Rosé vintage and High West release year remain unspecified because they are not sufficiently legible. Partially hidden background bottles are excluded.
 
-Optional fields: `assortment: true` for a general drink selection (ABV varies where unspecified), `description` for production/serving details, `confirmation` for an unresolved label question, `abvUnconfirmed: true` for a provisional published strength, and `sources` as an array of `{ "label": "Product reference", "url": "https://..." }`. Only HTTPS reference links are accepted. `catalogNote` provides the top-level provenance statement.
+Optional fields: `assortment: true` for a general drink selection (ABV varies where unspecified), `description` for production/serving details, `confirmation` for an unresolved label question, `abvUnconfirmed: true` for a provisional published strength, and `sources` as an array of `{ "label": "Product reference", "url": "https://..." }`. Only HTTPS reference links are accepted. The guest page has a lowercase “now serving” title and a single updated-date line. Non-alcoholic selections show their brand origins without repeating the category label.
 
 ## Update the collection
 
