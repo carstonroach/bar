@@ -678,7 +678,8 @@
           "label": "Brand origin",
           "url": "https://www.sanpellegrino.com/s.pellegrino-water/origins"
         }
-      ]
+      ],
+      "abv": 0
     },
     {
       "id": "la-croix",
@@ -694,7 +695,8 @@
           "label": "Brand origin",
           "url": "https://en.wikipedia.org/wiki/La_Croix_Sparkling_Water"
         }
-      ]
+      ],
+      "abv": 0
     },
     {
       "id": "high-noon",
@@ -719,7 +721,8 @@
           "label": "Brand origin",
           "url": "https://fever-tree.com/index.php/en-us/our-story"
         }
-      ]
+      ],
+      "abv": 0
     },
     {
       "id": "rotating-beers",
