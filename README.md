@@ -52,3 +52,7 @@ For a dedicated repository: place these files at its root, adjust the workflow b
 From this folder run `python3 -m http.server 8000 --directory guest-drinks`, then open `http://localhost:8000`. Use an HTTP server; opening the HTML directly from disk will not reliably load the JSON.
 
 The menu uses textContent for inventory values, so bottle names and notes are rendered as text rather than HTML. Invalid inventory preserves the last successfully displayed list and reports the refresh failure. There are no third-party assets or runtime dependencies.
+
+## Signature cocktails
+
+The `cocktails` array in `guest-drinks/inventory.json` renders before all inventory categories, under “Fall signature cocktails.” Each entry has `name`, `venue`, and `ingredients`; array order is preserved. Venue credits and ingredient lists are supplied by the owner.

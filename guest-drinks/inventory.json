@@ -753,5 +753,27 @@
         }
       ]
     }
+  ],
+  "cocktails": [
+    {
+      "name": "Spiced Pear Sidecar",
+      "venue": "Nightcap - Ann Arbor, MI",
+      "ingredients": "St. George Spiced Pear, Armagnac, lemon"
+    },
+    {
+      "name": "After All",
+      "venue": "Vermillion - Alexandria, VA",
+      "ingredients": "Apple Brandy, vermouth, peach, lemon, spice"
+    },
+    {
+      "name": "Sazerac",
+      "venue": "Grand Roosevelt Hotel - New Orleans, LA",
+      "ingredients": "Rye, Armagnac, bitters, lemon peel"
+    },
+    {
+      "name": "Paper Plane",
+      "venue": "The Violet Hour - Chicago, IL",
+      "ingredients": "Bourbon, amaro, Aperix, lemon"
+    }
   ]
 }

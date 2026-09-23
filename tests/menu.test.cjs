@@ -23,9 +23,11 @@ const clone = () => JSON.parse(JSON.stringify(inventory));
 async function run() {
   await new Promise(resolve => setImmediate(resolve));
   assert.equal(inventory.drinks.length, 45);
+  assert.equal(elements.menu.children[0].children[0].id, 'fall-cocktails');
+  assert.deepEqual(all(elements.menu).filter(el => el.tag === 'h4').slice(0, 4).map(el => el.textContent), ['Spiced Pear Sidecar', 'After All', 'Sazerac', 'Paper Plane']);
   assert.equal(inventory.drinks.filter(d => d.type === 'wine').length, 11);
   assert.equal(inventory.drinks.filter(d => d.type === 'liquor').length, 30);
-  assert.equal(all(elements.menu).filter(el => el.tag === 'h4').length, 45);
+  assert.equal(all(elements.menu).filter(el => el.tag === 'h4').length, 49);
   assert.equal(all(elements.menu).filter(el => el.tag === 'a').length, 0);
   assert.equal(all(elements.menu).filter(el => el.tag === 'details').length, 0);
   assert.equal(all(elements.menu).filter(el => el.className === 'confirmation').length, 0);
@@ -43,7 +45,7 @@ async function run() {
   assert(elements.status.textContent.includes('may be out of date'));
   fail = false; response = clone(); response.drinks[0].available = false;
   await vm.runInContext('refresh()', context);
-  assert.equal(all(elements.menu).filter(el => el.tag === 'h4').length, 44);
+  assert.equal(all(elements.menu).filter(el => el.tag === 'h4').length, 48);
   assert.equal(elements.status.textContent, '');
   response = clone(); response.drinks[0].name = '<img src=x onerror=alert(1)>';
   await vm.runInContext('refresh()', context);

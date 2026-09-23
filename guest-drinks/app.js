@@ -10,6 +10,12 @@ function node(tag, text, className) {
 }
 function validate(data) {
   if (!data || !Array.isArray(data.drinks)) throw new Error('Invalid inventory');
+  if (data.cocktails !== undefined) {
+    if (!Array.isArray(data.cocktails)) throw new Error('Invalid cocktails');
+    for (const cocktail of data.cocktails) {
+      if (!cocktail || ['name', 'venue', 'ingredients'].some(key => typeof cocktail[key] !== 'string' || !cocktail[key].trim())) throw new Error('Invalid cocktail');
+    }
+  }
   if (data.catalogNote !== undefined && typeof data.catalogNote !== 'string') throw new Error('Invalid catalog note');
   if (data.updatedAt !== null && (typeof data.updatedAt !== 'string' || Number.isNaN(Date.parse(data.updatedAt)))) throw new Error('Invalid date');
   const ids = new Set();
@@ -31,6 +37,18 @@ function validate(data) {
 }
 function render(data) {
   const menu = document.createDocumentFragment();
+  if (data.cocktails?.length) {
+    const section = node('section'); section.id = 'fall-cocktails';
+    const heading = node('div', undefined, 'section-heading');
+    heading.append(node('h2', 'Fall signature cocktails')); section.append(heading);
+    const list = node('ul');
+    for (const cocktail of data.cocktails) {
+      const item = node('li');
+      item.append(node('h4', cocktail.name), node('p', cocktail.venue, 'details'), node('p', cocktail.ingredients, 'notes'));
+      list.append(item);
+    }
+    section.append(list); menu.append(section);
+  }
   for (const [id, title] of categories) {
     const section = node('section'); section.id = id;
     const drinks = data.drinks.filter(d => d.type === id && d.available);
