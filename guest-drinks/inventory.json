@@ -5,7 +5,7 @@
       "id": "marie-duffau-napoleon",
       "name": "Marie Duffau Napoléon",
       "type": "liquor",
-      "class": "Brandy",
+      "class": "Cognac/Armagnac",
       "available": true,
       "origin": "Bas-Armagnac, Gascony, France",
       "abv": 40,
