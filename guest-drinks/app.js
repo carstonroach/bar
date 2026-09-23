@@ -18,6 +18,7 @@ function validate(data) {
     ids.add(drink.id);
     for (const key of ['producer', 'origin', 'notes', 'description', 'confirmation']) if (drink[key] !== undefined && typeof drink[key] !== 'string') throw new Error('Invalid text');
     if (drink.abv !== undefined && (typeof drink.abv !== 'number' || !Number.isFinite(drink.abv) || drink.abv < 0 || drink.abv > 100)) throw new Error('Invalid ABV');
+    if (drink.assortment !== undefined && typeof drink.assortment !== 'boolean') throw new Error('Invalid assortment');
     if (drink.abvUnconfirmed !== undefined && typeof drink.abvUnconfirmed !== 'boolean') throw new Error('Invalid ABV status');
     if (drink.sources !== undefined) {
       if (!Array.isArray(drink.sources)) throw new Error('Invalid sources');
@@ -35,14 +36,14 @@ function render(data) {
     const section = node('section'); section.id = id;
     const drinks = data.drinks.filter(d => d.type === id && d.available);
     const heading = node('div', undefined, 'section-heading');
-    heading.append(node('h2', title), node('span', `${drinks.length} available`, 'count')); section.append(heading);
+    heading.append(node('h2', title), node('span', `${drinks.length} ${drinks.some(d => d.assortment) ? 'selections' : 'available'}`, 'count')); section.append(heading);
     const classes = [...new Set(drinks.map(d => d.class))].sort((a, b) => a.localeCompare(b));
     for (const spiritClass of classes) {
       section.append(node('h3', spiritClass));
       const list = node('ul');
       for (const d of drinks.filter(d => d.class === spiritClass).sort((a, b) => a.name.localeCompare(b.name))) {
         const item = node('li'); item.append(node('h4', d.name));
-        const strength = d.abv !== undefined ? `${d.abv}% ABV${d.abvUnconfirmed ? ' (label check pending)' : ''}` : 'ABV awaiting label confirmation';
+        const strength = d.abv !== undefined ? `${d.abv}% ABV${d.abvUnconfirmed ? ' (label check pending)' : ''}` : d.type === 'non-alcoholic' ? 'Non-alcoholic' : d.assortment ? 'ABV varies by selection' : 'ABV awaiting label confirmation';
         const details = [d.producer, d.origin, strength].filter(Boolean).join(' · ');
         if (details) item.append(node('p', details, 'details'));
         if (d.notes) item.append(node('p', d.notes, 'notes'));

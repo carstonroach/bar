@@ -1,6 +1,6 @@
 {
   "updatedAt": "2026-09-23",
-  "catalogNote": "Identified from collection photos, with bottle details confirmed by the owner. ABVs use bottle labels, owner confirmations or published product specifications. Tasting notes describe the product or stated style, not a tasting of these opened bottles.",
+  "catalogNote": "Bottle details are based on collection photos, owner confirmations and published product specifications. Tasting notes describe the product or stated style. Beer and assorted drink flavors rotate; ask your host for current options.",
   "drinks": [
     {
       "id": "marie-duffau-napoleon",
@@ -664,6 +664,51 @@
           "url": "https://www.martini.com/products/martini-extra-dry/"
         }
       ]
+    },
+    {
+      "id": "san-pellegrino",
+      "name": "San Pellegrino",
+      "type": "non-alcoholic",
+      "class": "Sparkling water",
+      "available": true,
+      "assortment": true,
+      "notes": "Sparkling mineral water."
+    },
+    {
+      "id": "la-croix",
+      "name": "La Croix",
+      "type": "non-alcoholic",
+      "class": "Sparkling water",
+      "available": true,
+      "assortment": true,
+      "notes": "Various flavors. Ask your host for today’s selection."
+    },
+    {
+      "id": "high-noon",
+      "name": "High Noon",
+      "type": "liquor",
+      "class": "Ready-to-drink cocktails",
+      "available": true,
+      "assortment": true,
+      "notes": "Various flavors. Ask your host for today’s selection."
+    },
+    {
+      "id": "fever-tree",
+      "name": "Fever Tree sodas",
+      "type": "non-alcoholic",
+      "class": "Sodas & mixers",
+      "available": true,
+      "assortment": true,
+      "notes": "Various flavors. Enjoy on their own or as a mixer."
+    },
+    {
+      "id": "rotating-beers",
+      "name": "Rotating domestic & craft beers",
+      "type": "beer",
+      "class": "Rotating selection",
+      "available": true,
+      "assortment": true,
+      "notes": "A rotating selection of domestic and craft beers. Ask your host what’s available today."
     }
   ]
 }
