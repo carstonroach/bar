@@ -23,14 +23,16 @@ const clone = () => JSON.parse(JSON.stringify(inventory));
 async function run() {
   await new Promise(resolve => setImmediate(resolve));
   assert.equal(inventory.drinks.length, 39);
-  assert.equal(inventory.drinks.filter(d => d.type === 'wine').length, 10);
-  assert.equal(inventory.drinks.filter(d => d.type === 'liquor').length, 29);
+  assert.equal(inventory.drinks.filter(d => d.type === 'wine').length, 11);
+  assert.equal(inventory.drinks.filter(d => d.type === 'liquor').length, 28);
   assert.equal(all(elements.menu).filter(el => el.tag === 'h4').length, 39);
   assert.equal(all(elements.menu).filter(el => el.tag === 'a').length, 39);
   assert.equal(all(elements.menu).filter(el => el.tag === 'details').length, 39);
-  assert.equal(all(elements.menu).filter(el => el.className === 'confirmation').length, 8);
+  assert.equal(all(elements.menu).filter(el => el.className === 'confirmation').length, 0);
   assert(all(elements.menu).some(el => el.textContent === 'Thousand Lives Pinot Noir 2022'));
-  assert(all(elements.menu).some(el => el.textContent.includes('ABV awaiting label confirmation')));
+  assert(!all(elements.menu).some(el => el.textContent.includes('ABV awaiting label confirmation')));
+  assert.equal(inventory.drinks.find(d => d.id === 'vincenzi-vermouth-bianco').abv, 17);
+  assert.equal(inventory.drinks.find(d => d.id === 'vincenzi-vermouth-bianco').class, 'Vermouth');
   for (const mutate of [d => d.drinks.push(d.drinks[0]), d => d.drinks[0].abv = 101, d => d.drinks[0].sources[0].url = 'javascript:alert(1)', d => d.drinks[0].confirmation = 4]) {
     context.input = clone(); mutate(context.input);
     assert.throws(() => vm.runInContext('validate(input)', context));

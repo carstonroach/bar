@@ -1,6 +1,6 @@
 {
   "updatedAt": "2026-09-23",
-  "catalogNote": "Identified from four collection photos. ABVs use readable labels or published product specifications. Marked details need a bottle-label check. Tasting notes describe the product or stated style, not a tasting of these opened bottles.",
+  "catalogNote": "Identified from collection photos, with bottle details confirmed by the owner. ABVs use bottle labels, owner confirmations or published product specifications. Tasting notes describe the product or stated style, not a tasting of these opened bottles.",
   "drinks": [
     {
       "id": "marie-duffau-napoleon",
@@ -20,23 +20,21 @@
       ]
     },
     {
-      "id": "vincenzi-white-chocolate",
-      "name": "Vincenzi White Chocolate Liqueur",
-      "type": "liquor",
-      "class": "Liqueurs",
+      "id": "vincenzi-vermouth-bianco",
+      "name": "Fratelli Vincenzi Vermouth di Torino Bianco",
+      "type": "wine",
+      "class": "Vermouth",
       "available": true,
       "origin": "Turin, Piedmont, Italy",
-      "abv": 15,
-      "description": "White chocolate liqueur. Serve chilled or over ice.",
-      "notes": "Sweet white chocolate with a creamy texture.",
+      "abv": 17,
+      "description": "Bianco vermouth: aromatized fortified wine from Turin. 17% ABV and 750 ml confirmed on the bottle label. Serve chilled or over ice; refrigerate after opening.",
+      "notes": "Style profile: aromatic, gently sweet white vermouth with herbal notes.",
       "sources": [
         {
-          "label": "Product reference",
-          "url": "https://www.distillerievincenzi.com/bicerin/"
+          "label": "Producer reference",
+          "url": "https://www.distillerievincenzi.com/vermouth/"
         }
-      ],
-      "confirmation": "White chocolate is visible on the label. Confirm the exact expression and ABV; 15% is the producer’s Bicerin White specification.",
-      "abvUnconfirmed": true
+      ]
     },
     {
       "id": "four-roses-obsk",
@@ -215,7 +213,7 @@
       "class": "Rosé wine",
       "available": true,
       "origin": "Provence, France",
-      "description": "2023 vintage visible on the front label. Still rosé; serve chilled.",
+      "description": "2023 vintage visible on the front label. Still rosé; serve chilled. Bottle ABV confirmed by the owner.",
       "notes": "General product profile: delicate peach, melon and floral notes.",
       "sources": [
         {
@@ -223,7 +221,7 @@
           "url": "https://www.thekitchn.com/trader-joes-j-l-quinson-cotes-de-provence-rose-review-23548366"
         }
       ],
-      "confirmation": "Please confirm the ABV on the 2023 bottle’s back label."
+      "abv": 12.5
     },
     {
       "id": "kirkland-prosecco-rose",
@@ -266,7 +264,7 @@
       "class": "Red wine",
       "available": true,
       "origin": "Mendoza, Argentina",
-      "description": "2022 vintage visible on the front label. Serve slightly cool.",
+      "description": "2022 vintage visible on the front label. Serve slightly cool. Bottle ABV confirmed by the owner.",
       "notes": "General product profile: raspberry, strawberry and rose, with a soft texture.",
       "sources": [
         {
@@ -274,7 +272,7 @@
           "url": "https://www.totalwine.com/wine/red-wine/pinot-noir/thousand-lives-pinot-noir/p/213637750"
         }
       ],
-      "confirmation": "Please confirm the ABV on the 2022 bottle’s back label."
+      "abv": 12.5
     },
     {
       "id": "maria-jola-sangria",
@@ -283,7 +281,7 @@
       "class": "Sangria",
       "available": true,
       "origin": "France",
-      "description": "Red wine-based sangria. Front label explicitly says produced in France. Serve chilled.",
+      "description": "Red wine-based sangria. Front label explicitly says produced in France. Serve chilled. Bottle ABV confirmed by the owner.",
       "notes": "Sweet fruit with citrus and warm spice.",
       "sources": [
         {
@@ -291,16 +289,16 @@
           "url": "https://www.bottlesandcases.com/wines/Maria-Jola-Sangria-15-w1662364ds"
         }
       ],
-      "confirmation": "Please confirm the ABV on the back label; older listings may not match this bottle."
+      "abv": 7
     },
     {
       "id": "ercole-barbera",
-      "name": "Ercole Barbera del Monferrato DOC",
+      "name": "Ercole Barbera del Monferrato DOC 2024",
       "type": "wine",
       "class": "Red wine",
       "available": true,
       "origin": "Piedmont, Italy",
-      "description": "100% Barbera; 1-liter bottle. Importer describes concrete fermentation. Vintage is not visible.",
+      "description": "2024 vintage, 12.5% ABV confirmed by the owner. 100% Barbera; 1-liter bottle. Importer describes concrete fermentation.",
       "notes": "Bright acidity and a lively, fruit-forward character.",
       "sources": [
         {
@@ -308,7 +306,7 @@
           "url": "https://thepiedmontguy.squarespace.com/s/Ercole-Barbera-Tech-Sheet.pdf"
         }
       ],
-      "confirmation": "Please confirm vintage and ABV. The importer’s undated sheet lists 12.5%, which may not match this bottle."
+      "abv": 12.5
     },
     {
       "id": "kirkland-anejo",
@@ -420,16 +418,14 @@
       "available": true,
       "origin": "Italy",
       "abv": 24,
-      "description": "Bitter red aperitif; a classic Negroni or Americano ingredient.",
+      "description": "Bitter red aperitif; a classic Negroni or Americano ingredient. Bottle ABV confirmed by the owner.",
       "notes": "Bitter orange, herbs and balancing sweetness.",
       "sources": [
         {
           "label": "Product reference",
           "url": "https://www.campari.com/en-us/"
         }
-      ],
-      "confirmation": "24% is the US product specification; confirm the bottle label because Campari strengths vary by market.",
-      "abvUnconfirmed": true
+      ]
     },
     {
       "id": "siesta-key-coconut",
@@ -473,16 +469,14 @@
       "available": true,
       "origin": "Scotland",
       "abv": 44,
-      "description": "Original cucumber-and-rose gin, not a special edition.",
+      "description": "Original cucumber-and-rose gin, not a special edition. Bottle ABV confirmed by the owner.",
       "notes": "Juniper, cucumber and floral rose notes.",
       "sources": [
         {
           "label": "Product reference",
           "url": "https://us.hendricksgin.com/faqs/"
         }
-      ],
-      "confirmation": "44% is the US specification; confirm the bottle label because other markets use 41.4%.",
-      "abvUnconfirmed": true
+      ]
     },
     {
       "id": "sailor-jerry",
@@ -507,17 +501,16 @@
       "type": "liquor",
       "class": "Liqueurs",
       "available": true,
-      "origin": "Japanese brand; bottling country unconfirmed",
+      "origin": "Osaka, Japan",
       "abv": 20,
-      "description": "Made with Japanese melon ingredients. The brand’s Japanese origin does not establish where this particular bottle was produced.",
+      "description": "Melon liqueur made with Japanese melon ingredients. Production in Osaka, Japan confirmed by the owner from the bottle.",
       "notes": "Sweet, vivid melon flavor.",
       "sources": [
         {
           "label": "Product reference",
           "url": "https://www.midori-world.com/product"
         }
-      ],
-      "confirmation": "Please confirm the country of production on the back label."
+      ]
     },
     {
       "id": "old-forester-1910",
